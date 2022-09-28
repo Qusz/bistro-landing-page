@@ -6,4 +6,87 @@ $ff-main: "Roboto-Regular", sans-serif;
 $ff-main--light: "Roboto-Light", sans-serif;
 $ff-main--bold: "Roboto-Bold", sans-serif;
 
+$fs-xl: 5em;
+$fs-l: 3em;
+$fs-m: 2em;
+$fs-s: 1.5em;
+$fs-xs: 1em;
+$fs-xxs: .7em;
 
+
+.navbar {
+
+  &__logo {
+    font-family: $ff-logo;
+    font-size: $fs-l;
+  }
+
+  &__items {
+    font-family: $ff-headers;
+    font-size: $fs-s;
+    font-weight: 500;
+      
+      a {
+        text-decoration: none;
+        color: black;
+      }
+  }
+}
+
+.hero {
+
+  &__title {
+    font-family: $ff-headers;
+    font-size: $fs-xl;
+  }
+
+  &__subtitle {
+    font-family: $ff-main;
+    font-size: $fs-s;
+  }
+}
+
+.menu {
+
+  &__title {
+    font-family: $ff-headers;
+    font-size: $fs-l;
+  }
+
+  &__desc {
+    font-family: $ff-main--light;
+    font-size: $fs-s;
+  }
+}
+
+.address {
+
+  &__text {
+    font-family: $ff-headers;
+    font-size: $fs-l;
+  }
+
+  &__call {
+    font-family: $ff-headers;
+    font-size: $fs-m;
+  }
+
+  &__phone-number {
+    font-family: $ff-main--light;
+    font-size: $fs-s;
+  }
+}
+
+.footer {
+
+  &__copyright {
+    font-family: $ff-main--light;
+    font-size: $fs-xs;
+  }
+}
+
+.btn {
+  font-family: $ff-main;
+  font-size: $fs-s;
+  text-decoration: none;
+}
