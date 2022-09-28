@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <title>Generic Restaurant</title>
 </head>
 <body>
@@ -14,23 +14,23 @@
       <nav class="navbar">
         <div class="navbar__logo">Restaurant Générique</div>
         <div class="navbar__items">
-          <p class="navbar__item"></p>
-          <p class="navbar__item"></p>
-          <p class="navbar__item"></p>
-          <p class="navbar__item"></p>
-          <p class="navbar__item"></p>
-          <p class="navbar__item"></p>
+          <p class="navbar__item">Home</p>
+          <p class="navbar__item">Delivery</p>
+          <p class="navbar__item">Menu</p>
+          <p class="navbar__item">Our Staff</p>
         </div>
       </nav>
-
-      <div class="hero">
-        <p class="hero__preface"></p>
-        <h2 class="hero__title"></h2>
-        <p class="hero__subtitle"></p>
-        <a class="hero__button" href="#"></a>
-      </div>
     </div>
   </header>
+    
+  <div class="hero">
+    <div class="container">
+      <h2 class="hero__title">Breakfast special menu</h2>
+      <p class="hero__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia maiores sequi enim, culpa exercitationem</p>
+      <a class="hero__button" href="#">Explore Now</a>
+    </div>
+  </div>
+
 
   <main class="main container">
 
@@ -38,37 +38,64 @@
       <h3 class="menu__title">Chef's favorite</h3>
       <div class="menu__items">
         <div class="menu__item">
-          <img src="" alt="" class="menu__pic">
-          <p class="menu__desc">Fritata</p>
+          <img src="../assets/img/pumpkin_soup/pumkin_soup_720.jpg"
+          srcset="../assets/img/pumpkin_soup/pumkin_soup_340.jpg 340w,
+          ../assets/img/pumpkin_soup/pumkin_soup_480.jpg 480w,
+          ../assets/img/pumpkin_soup/pumkin_soup_720.jpg 720w"
+          sizes="100vw" 
+          alt="pumpkin soup" 
+          class="menu__pic">
+          <p class="menu__desc">Pumpkin soup</p>
         </div>
         <div class="menu__item">
-          <img src="" alt="" class="menu__pic">
-          <p class="menu__desc">Salmon salad</p>
+          <img src="../assets/img/shrimp_salad/shripm_salad_720.jpg" 
+          srcset="../assets/img/shrimp_salad/shripm_salad_340.jpg 340w,
+                  ../assets/img/shrimp_salad/shripm_salad_480.jpg 480w,
+                  ../assets/img/shrimp_salad/shripm_salad_720.jpg 720w"
+          alt="shrimp salad" 
+          class="menu__pic">
+          <p class="menu__desc">Shrimp salad</p>
         </div>
         <div class="menu__item">
-          <img src="" alt="" class="menu__pic">
-          <p class="menu__desc">Mushroom pasta</p>
+          <img src="../assets/img/risotto/risotto_720.jpg"
+          srcset="../assets/img/risotto/risotto_340.jpg 340w,
+                  ../assets/img/risotto/risotto_480.jpg 480w,
+                  ../assets/img/risotto/risotto_720.jpg 720w" 
+          alt="risotto" 
+          class="menu__pic">
+          <p class="menu__desc">Risotto</p>
         </div>
         <!--* This is gonna be a modal -->
         <div class="menu__show-menu"></div> 
+        
       </div>
     </div>
+
+    <div class="address">
+      <h4 class="address__text">We're easy to find</h4>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8019.634107289722!2d-60.3264685566831!3d53.30294225298746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1664266807519!5m2!1sen!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+      <h4 class="address__call">Call us</h4>
+      <p class="address__phone-number">(000) 000-0000</p>
+    </div>
+
+
 
   </main>
 
   <footer class="footer">
     <div class="container">
-      <div class="social">
-        <div class="social__item"></div>
-        <div class="social__item"></div>
-        <div class="social__item"></div>
-        <div class="social__item"></div>
+      <div class="footer__social">
+        <a href="#" class="social__item"><img src="../assets/social-icons/facebook.svg" class="social__icon"></a>
+        <a href="#" class="social__item"><img src="../assets/social-icons/instagram.svg" class="social__icon"></a>
+        <a href="#" class="social__item"><img src="../assets/social-icons/pinterest.svg" class="social__icon"></a>
+        <a href="#" class="social__item"><img src="../assets/social-icons/twitter.svg" class="social__icon"></a>
       </div>
+      <div class="footer__copyright">&copy 2022. All Rights Reserved</div>
     </div>
 
   </footer>
 
 
-  <script src="./js/app.js"></script>
+  <script src="../js/app.js"></script>
 </body>
 </html>
