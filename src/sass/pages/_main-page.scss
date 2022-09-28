@@ -1,5 +1,30 @@
-.hero {
-  background-image: url("../assets/img/header/header_1980.jpg");
-  background-position: center;
-}
+@use "../base/" as *;
 
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $clr-main-dark;
+
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: $spacer-m $spacer-s;
+    width: 50%;
+  }
+
+  &__img {
+    width: 50%;
+  }
+
+  &__title {
+    line-height: $spacer-xl;
+  }
+
+  &__subtitle {
+    margin-block: $spacer-l;
+  }
+}

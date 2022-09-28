@@ -1,0 +1,30 @@
+
+@use '../base/' as *; 
+
+.header {
+  background-color: $clr-main-light;
+  box-shadow: $box-shadow-bottom;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  padding-block: $spacer-xs;
+
+    &__item {
+
+      transition: all .2s ease;
+
+      &:hover {
+        color: $clr-accent;
+      }
+
+      &:not(:last-child) {
+        margin-right: $spacer-s;
+      }
+    }
+}
