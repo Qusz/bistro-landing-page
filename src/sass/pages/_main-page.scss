@@ -1,30 +1,75 @@
 @use "../base/" as *;
 
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $clr-main-dark;
-
-
-  &__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    padding: $spacer-m $spacer-s;
-    width: 50%;
+  &__first-card {
+    background-color: $clr-secondary;
+    color: $clr-main-light;
   }
 
-  &__img {
-    width: 50%;
+  &__second-card {
+    background-color: $clr-main-dark;
   }
+}
+
+.menu {
+  margin: $spacer-m auto 0 auto;
+  text-align: center;
 
   &__title {
-    line-height: $spacer-xl;
+    margin-bottom: $spacer-s;
   }
 
-  &__subtitle {
-    margin-block: $spacer-l;
+  &__items {
+    display: flex;
+    justify-content: space-between;
   }
+
+  &__item {
+    width: 30%;
+  }
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: $spacer-l;
+
+  &__map {
+    margin-block: $spacer-s;
+  }
+}
+
+.footer {
+  margin-top: $spacer-m;
+  background-color: $clr-main-light;
+  box-shadow: $box-shadow-top;
+  padding-block: $spacer-xs;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .social {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+
+        &__icon {
+          width: 40px;
+          filter: invert(9%) sepia(19%) saturate(6637%) hue-rotate(296deg) brightness(90%) contrast(92%);
+          transition: all .2s ease;
+
+            &:hover {
+              opacity: .7;
+            }
+        }
+    }
+
+    &__copyright {
+      margin-top: $spacer-xs;
+    }
 }

@@ -6,10 +6,10 @@ $ff-main: "Roboto-Regular", sans-serif;
 $ff-main--light: "Roboto-Light", sans-serif;
 $ff-main--bold: "Roboto-Bold", sans-serif;
 
-$fs-xl: 5em;
-$fs-l: 3em;
+$fs-xl: 4.5em;
+$fs-l: 3.5em;
 $fs-m: 2em;
-$fs-s: 1.5em;
+$fs-s: 1.2em;
 $fs-xs: 1em;
 $fs-xxs: .7em;
 
@@ -18,7 +18,7 @@ $fs-xxs: .7em;
 
   &__logo {
     font-family: $ff-logo;
-    font-size: $fs-l;
+    font-size: $fs-m;
   }
 
   &__items {
@@ -30,19 +30,6 @@ $fs-xxs: .7em;
   a {
     text-decoration: none;
     color: black;
-  }
-}
-
-.hero {
-
-  &__title {
-    font-family: $ff-headers;
-    font-size: $fs-xl;
-  }
-
-  &__subtitle {
-    font-family: $ff-main;
-    font-size: $fs-s;
   }
 }
 
@@ -89,4 +76,16 @@ $fs-xxs: .7em;
   font-family: $ff-main;
   font-size: $fs-s;
   text-decoration: none;
+}
+
+.card {
+  &__title {
+    font-family: $ff-headers;
+    font-size: $fs-xl;
+  }
+
+  &__text {
+    font-family: $ff-main;
+    font-size: $fs-s;
+  }
 }
