@@ -29,6 +29,79 @@
   }
 }
 
+.ambience {
+  position: relative;
+  height: 400px;
+  width: 95%;
+  margin: 0 auto;
+
+
+    &__header {
+      text-align: center;
+      margin-block: $spacer-m;
+    }
+
+    &__track {
+      height: 100%;
+      position: relative;
+      transition: transform 250ms ease-in;
+    }
+
+    &__slide {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      animation: slide 1s;
+
+      @keyframes slide {
+        from {
+          opacity: .7;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+    }
+
+    &__button {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: 0;
+      opacity: .8;
+      transition: .2s ease;
+      z-index: 2;
+
+
+        img {
+          width: 50px;
+          filter: invert(0%) sepia(100%) saturate(12%) hue-rotate(231deg) brightness(98%) contrast(102%);
+        }
+
+        &:hover {
+          filter: invert(36%) sepia(68%) saturate(1217%) hue-rotate(341deg) brightness(90%) contrast(89%);
+        }
+    }
+
+    &__button--left {
+      left: -$spacer-m;
+    }
+
+    &__button--right {
+      right: -$spacer-m;
+    }
+}
+
 .address {
   display: flex;
   flex-direction: column;
@@ -38,6 +111,7 @@
 
   &__map {
     margin-block: $spacer-s;
+    max-width: 98%;
   }
 }
 
@@ -61,9 +135,10 @@
         &__icon {
           width: 40px;
           filter: invert(9%) sepia(19%) saturate(6637%) hue-rotate(296deg) brightness(90%) contrast(92%);
-          transition: all .2s ease;
+          transition: .2s ease;
 
-            &:hover {
+            &:hover,
+            &:focus {
               opacity: .7;
             }
         }

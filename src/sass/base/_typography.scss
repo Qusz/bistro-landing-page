@@ -46,6 +46,14 @@ $fs-xxs: .7em;
   }
 }
 
+.ambience {
+  
+  &__header {
+    font-family: $ff-headers;
+    font-size: $fs-l;
+  }
+}
+
 .address {
 
   &__text {

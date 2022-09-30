@@ -97,9 +97,31 @@
         </div>
       </section>
 
-      <section class="atmosphere">
-        <!-- TODO slider with location pics here -->
-      </section>
+      <div class="container">
+        <h3 class="ambience__header">Ambience</h3>
+        <section class="ambience">
+          <button class="ambience__button ambience__button--left">
+            <img src="../assets/arrows/chevron-left.svg">
+          </button>
+            <ul class="ambience__track">
+              <li class="ambience__slide current-slide">
+                <img src="../assets/img/main/ambience/ambience_1024.jpg" alt="">
+              </li>
+              <li class="ambience__slide is-hidden">
+                <img src="../assets/img/main/ambience/ambience_1024.jpg" alt="">
+              </li>
+              <li class="ambience__slide is-hidden">
+                <img src="../assets/img/main/ambience/ambience_1024.jpg" alt="">
+              </li>
+              <li class="ambience__slide is-hidden">
+                <img src="../assets/img/main/ambience/ambience_1024.jpg" alt="">
+              </li>
+            </ul>
+          <button class="ambience__button ambience__button--right">
+            <img src="../assets/arrows/chevron-right.svg">
+          </button>
+        </section>
+      </div>
 
       <section class="address">
         <h4 class="address__text">We're easy to find</h4>
@@ -126,6 +148,6 @@
 
 
 
-  <script src="../js/app.js"></script>
+  <script src="../js/app.js" type="module"></script>
 </body>
 </html>
