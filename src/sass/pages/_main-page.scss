@@ -1,6 +1,9 @@
 @use "../base/" as *;
 
 .hero {
+
+  margin-top: $spacer-l;
+
   &__first-card {
     background-color: $clr-secondary;
     color: $clr-main-light;
@@ -32,8 +35,9 @@
 .ambience {
   position: relative;
   height: 400px;
-  width: 95%;
+  max-width: 80%;
   margin: 0 auto;
+
 
 
     &__header {
@@ -80,7 +84,6 @@
       border: 0;
       transition: .2s ease;
       z-index: 2;
-
 
         img {
           width: 50px;

@@ -32,6 +32,14 @@ loadSlider();
 
 //* Hamburger
 
+const hamburger = document.querySelector('.navbar__hamburger');
+const navbarItems = document.querySelector('.navbar__items');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('is-active');
+  navbarItems.classList.toggle('is-active');
+})
+
 
 //* Functions
 
