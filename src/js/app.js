@@ -27,18 +27,12 @@ class Slider {
   }
 }
 
+
+//* Main
+
 loadSlider();
+loadHamburger();
 
-
-//* Hamburger
-
-const hamburger = document.querySelector('.navbar__hamburger');
-const navbarItems = document.querySelector('.navbar__items');
-
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('is-active');
-  navbarItems.classList.toggle('is-active');
-})
 
 
 //* Functions
@@ -77,6 +71,15 @@ function loadSlider() {
   })
 }
 
-
+function loadHamburger() {
+  const hamburger = document.querySelector('.navbar__hamburger'),
+        navbarItems = document.querySelector('.navbar__items');
+  
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('is-active');
+    navbarItems.classList.toggle('is-active');
+  })
+  
+}
 
 

@@ -4,7 +4,6 @@
 .header {
   background-color: $clr-main-light;
   box-shadow: $box-shadow-bottom;
-
 }
 
 .navbar {
@@ -40,6 +39,7 @@
       display: block;
       position: absolute;
       right: $spacer-xs;
+      top: $spacer-s;
       z-index: 1;
       cursor: pointer;
 
