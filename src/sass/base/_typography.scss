@@ -65,7 +65,31 @@ $fs-xxs: .7em;
     }
 }
 
+//* Our History
 
+.history {
+
+  &__chef-name {
+    font-family: $ff-main;
+    font-size: $fs-s;
+  }
+
+  &__caption {
+    font-family: $ff-main;
+    font-size: $fs-s;
+  }
+
+  &__title {
+    font-family: $ff-headers;
+    font-size: $fs-l;
+  }
+
+  &__content {
+    font-family: $ff-main;
+    font-size: $fs-s;
+  }
+
+}
 
 //* ///Elements///
 
