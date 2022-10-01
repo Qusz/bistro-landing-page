@@ -110,7 +110,7 @@
   flex-direction: column;
   align-items: center;
 
-  margin-top: $spacer-l;
+  margin-block: $spacer-l;
 
   &__map {
     margin-block: $spacer-s;
@@ -119,7 +119,6 @@
 }
 
 .footer {
-  margin-top: $spacer-m;
   background-color: $clr-main-light;
   box-shadow: $box-shadow-top;
   padding-block: $spacer-xs;
