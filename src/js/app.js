@@ -30,10 +30,18 @@ class Slider {
 
 //* Main
 
-loadSlider();
-loadHamburger();
 
+try {
+  loadSlider();
+} catch(error) {
+  console.log(error);
+}
 
+try {
+  loadHamburger();
+} catch(error) {
+  console.log(error);
+}
 
 //* Functions
 
@@ -51,19 +59,18 @@ function loadSlider() {
 
   nextButton.addEventListener('click', () => {
     const currentSlide = track.querySelector('.current-slide'),
-          nextSlide = currentSlide.nextElementSibling;
-    const nextIndex = slides.findIndex(slide => slide === nextSlide);
+          nextSlide = currentSlide.nextElementSibling,
+          nextIndex = slides.findIndex(slide => slide === nextSlide);
 
     slider.moveToSlide(track, currentSlide, nextSlide);
     slider.hideUnhideSlides(currentSlide, nextSlide);
     slider.removeAddArrow(slides,prevButton, nextButton, nextIndex);
-
   })
 
   prevButton.addEventListener('click', () => {
     const currentSlide = track.querySelector('.current-slide'),
-          prevSlide = currentSlide.previousElementSibling;
-    const prevIndex = slides.findIndex(slide => slide === prevSlide);
+          prevSlide = currentSlide.previousElementSibling,
+          prevIndex = slides.findIndex(slide => slide === prevSlide);
 
     slider.moveToSlide(track, currentSlide, prevSlide);
     slider.hideUnhideSlides(currentSlide, prevSlide);
@@ -79,7 +86,6 @@ function loadHamburger() {
     hamburger.classList.toggle('is-active');
     navbarItems.classList.toggle('is-active');
   })
-  
 }
 
 

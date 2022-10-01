@@ -14,25 +14,9 @@ $fs-xs: 1em;
 $fs-xxs: .7em;
 
 
-.navbar {
+//* ///Pages///
 
-  &__logo {
-    font-family: $ff-logo;
-    font-size: $fs-m;
-  }
-
-  &__items {
-    font-family: $ff-headers;
-    font-size: $fs-s;
-    font-weight: 500;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-}
-
+//* Main page
 .menu {
 
   &__title {
@@ -72,6 +56,38 @@ $fs-xxs: .7em;
   }
 }
 
+//* Delivery
+.delivery {
+
+    &__title {
+      font-family: $ff-headers;
+      font-size: $fs-xl;
+    }
+}
+
+
+
+//* ///Elements///
+
+.navbar {
+
+  &__logo {
+    font-family: $ff-logo;
+    font-size: $fs-m;
+  }
+
+  &__items {
+    font-family: $ff-headers;
+    font-size: $fs-s;
+    font-weight: 500;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
 .footer {
 
   &__copyright {
@@ -89,7 +105,7 @@ $fs-xxs: .7em;
 .card {
   &__title {
     font-family: $ff-headers;
-    font-size: $fs-xl;
+    font-size: $fs-l;
   }
 
   &__text {
