@@ -29,6 +29,7 @@
 
   &__item {
     width: 30%;
+    max-width: 480px;
   }
 }
 
@@ -149,4 +150,35 @@
     &__copyright {
       margin-top: $spacer-xs;
     }
+}
+
+
+//* ///Responsiveness///
+
+//* Mobile
+@media only screen and (max-width : 768px) {
+  
+  .menu {
+
+      &__items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__item {
+        width: 90%;
+      }
+
+      &__item:not(:first-child) {
+        margin-top: $spacer-m;
+      }
+  }
+
+  .address {
+
+      &__header {
+        text-align: center;
+      }
+  }
 }
