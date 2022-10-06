@@ -16,7 +16,6 @@
     &__img {
       width: 48%;
       align-self: center;
-
     }
 
     &__title {
@@ -34,16 +33,14 @@
 }
 
 .card--plain .card {
-   
-    &__wrapper {
-      width: 100%;
-      max-width: 800px;
-    }
+  &__wrapper {
+    width: 100%;
+    max-width: 800px;
+  }
 
-    &__text {
-      margin-block: $spacer-s
-    }
-  
+  &__text {
+    margin-block: $spacer-s
+  }
 }
 
 
@@ -51,9 +48,7 @@
 
 //* Mobile
 @media only screen and (max-width : 768px) {
-  
   .card {
-
     flex-direction: column;
 
       &__wrapper {

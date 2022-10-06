@@ -14,11 +14,11 @@ $fs-xs: 1em;
 $fs-xxs: .8em;
 
 
-//* ///Pages///
+//* ///////Pages///////
 
 //* Main page
-.dishes {
 
+.dishes {
   &__title {
     font-family: $ff-headers;
     font-size: $fs-l;
@@ -31,7 +31,6 @@ $fs-xxs: .8em;
 }
 
 .ambience {
-  
   &__header {
     font-family: $ff-headers;
     font-size: $fs-l;
@@ -39,7 +38,6 @@ $fs-xxs: .8em;
 }
 
 .address {
-
   &__header {
     font-family: $ff-headers;
     font-size: $fs-l;
@@ -57,18 +55,17 @@ $fs-xxs: .8em;
 }
 
 //* Delivery
-.delivery {
 
-    &__title {
-      font-family: $ff-headers;
-      font-size: $fs-xl;
-    }
+.delivery {
+  &__title {
+    font-family: $ff-headers;
+    font-size: $fs-xl;
+  }
 }
 
 //* Our History
 
 .history {
-
   &__chef-name {
     font-family: $ff-main;
     font-size: $fs-s;
@@ -93,7 +90,6 @@ $fs-xxs: .8em;
 //* Menu
 
 .menu {
-
   &__header {
     font-family: $ff-headers;
     font-size: $fs-l;
@@ -111,10 +107,9 @@ $fs-xxs: .8em;
   }
 }
 
-//* ///Elements///
+//* //////Elements///////
 
 .navbar {
-
   &__logo {
     font-family: $ff-logo;
     font-size: $fs-m;
@@ -133,7 +128,6 @@ $fs-xxs: .8em;
 }
 
 .footer {
-
   &__copyright {
     font-family: $ff-main--light;
     font-size: $fs-xs;
@@ -159,14 +153,13 @@ $fs-xxs: .8em;
 }
 
 
-//* ///Responsiveness///
+//* ///////Responsiveness///////
 
 @media only screen and (max-width : 768px) {
   
   //* Menu
 
   .menu {
-    
     &__dish-name,
     &__price {
       font-size: $fs-s;
@@ -176,7 +169,6 @@ $fs-xxs: .8em;
   //* Delivery
 
   .delivery {
-
     &__title {
       font-size: $fs-l;
     }

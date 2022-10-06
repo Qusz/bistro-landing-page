@@ -1,17 +1,16 @@
 @use "../base/" as *;
 
 .hero {
-
   margin-top: $spacer-l;
 
-  &__first-card {
-    background-color: $clr-secondary;
-    color: $clr-main-light;
-  }
+    &__first-card {
+      background-color: $clr-secondary;
+      color: $clr-main-light;
+    }
 
-  &__second-card {
-    background-color: $clr-main-dark;
-  }
+    &__second-card {
+      background-color: $clr-main-dark;
+    }
 }
 
 
@@ -19,19 +18,19 @@
   margin: $spacer-m auto 0 auto;
   text-align: center;
 
-  &__title {
-    margin-bottom: $spacer-s;
-  }
+    &__title {
+      margin-bottom: $spacer-s;
+    }
 
-  &__items {
-    display: flex;
-    justify-content: space-between;
-  }
+    &__items {
+      display: flex;
+      justify-content: space-between;
+    }
 
-  &__item {
-    width: 30%;
-    max-width: 480px;
-  }
+    &__item {
+      width: 30%;
+      max-width: 480px;
+    }
 }
 
 .ambience {
@@ -39,8 +38,6 @@
   height: 400px;
   max-width: 80%;
   margin: 0 auto;
-
-
 
     &__header {
       text-align: center;
@@ -114,10 +111,10 @@
 
   margin-block: $spacer-l;
 
-  &__map {
-    margin-block: $spacer-s;
-    max-width: 98%;
-  }
+    &__map {
+      margin-block: $spacer-s;
+      max-width: 98%;
+    }
 }
 
 .footer {
@@ -160,26 +157,24 @@
 @media only screen and (max-width : 768px) {
   
   .dishes {
+    &__items {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-      &__items {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+    &__item {
+      width: 90%;
+    }
 
-      &__item {
-        width: 90%;
-      }
-
-      &__item:not(:first-child) {
-        margin-top: $spacer-m;
-      }
+    &__item:not(:first-child) {
+      margin-top: $spacer-m;
+    }
   }
 
   .address {
-
-      &__header {
-        text-align: center;
-      }
+    &__header {
+      text-align: center;
+    }
   }
 }

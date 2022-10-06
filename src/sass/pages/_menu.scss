@@ -2,7 +2,6 @@
 
 
 .menu {
-
   max-width: 768px;
   margin: $spacer-m auto $spacer-m auto;
   padding: $spacer-m $spacer-s;
@@ -54,12 +53,9 @@
 //* ///Responsiveness///
 
 @media only screen and (max-width : 768px) {
-  
   .menu {
-    
     &__price {
       align-self: flex-start;
     }
   }
-  
 }

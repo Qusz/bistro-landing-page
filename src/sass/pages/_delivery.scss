@@ -1,32 +1,31 @@
 @use '../base/' as *;
 
 .delivery {
+  &__title {
+    margin-top: $spacer-m;
+    padding-block: $spacer-s;
+    text-align: center;
 
-    &__title {
-      margin-top: $spacer-m;
-      padding-block: $spacer-s;
-      text-align: center;
+    background-color: $clr-main-light;
+  }
 
-      background-color: $clr-main-light;
-    }
+  &__first-card {
+    background-color: $clr-secondary;
+    color: $clr-white;
+  }
 
-    &__first-card {
-      background-color: $clr-secondary;
-      color: $clr-white;
-    }
+  &__second-card {
+    background-color: $clr-main-dark;
+    margin-bottom: $spacer-l;
 
-    &__second-card {
-      background-color: $clr-main-dark;
-      margin-bottom: $spacer-l;
+      .uber-eats {
+        text-decoration: none;
+        color: $clr-accent;
 
-        .uber-eats {
-          text-decoration: none;
-          color: $clr-accent;
-
-            &:hover,
-            &:focus {
-              opacity: .7;
-            }
-        }
-    }
+          &:hover,
+          &:focus {
+            opacity: .7;
+          }
+      }
+  }
 }

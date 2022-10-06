@@ -5,33 +5,33 @@
   display: flex;
   flex-direction: column;
 
-  &__chef {
-    max-width: 300px;
-    border-radius: 50%;
-    margin: $spacer-m auto $spacer-s auto;
-  }
+    &__chef {
+      max-width: 300px;
+      border-radius: 50%;
+      margin: $spacer-m auto $spacer-s auto;
+    }
 
-  &__chef-name,
-  &__caption {
-    align-self: center;
-  }
+    &__chef-name,
+    &__caption {
+      align-self: center;
+    }
 
-  &__title {
-    text-align: center;
-    margin-block: $spacer-m;
-  }
+    &__title {
+      text-align: center;
+      margin-block: $spacer-m;
+    }
 
-  &__content {
-    max-width: 600px;
-    align-self: center;
-    text-align: justify;
-  }
+    &__content {
+      max-width: 600px;
+      align-self: center;
+      text-align: justify;
+    }
 
-  &__para:not(:last-child) {
-    margin-bottom: $spacer-xs;
-  }
+    &__para:not(:last-child) {
+      margin-bottom: $spacer-xs;
+    }
 
-  &__para:last-child {
-    margin-bottom: $spacer-m;
-  }
+    &__para:last-child {
+      margin-bottom: $spacer-m;
+    }
 }
