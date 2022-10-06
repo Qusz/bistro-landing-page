@@ -4,11 +4,13 @@
 
     &__title {
       margin-top: $spacer-m;
+      padding-block: $spacer-s;
       text-align: center;
+
+      background-color: $clr-main-light;
     }
 
     &__first-card {
-      margin-top: $spacer-m;
       background-color: $clr-secondary;
       color: $clr-white;
     }
