@@ -1,0 +1,65 @@
+@use '../base/' as *;
+
+
+.menu {
+
+  max-width: 768px;
+  margin: $spacer-m auto $spacer-m auto;
+  padding: $spacer-m $spacer-s;
+
+  background-color: $clr-main-dark;
+
+  display: flex;
+  flex-direction: column;
+
+    &__header {
+      text-align: center;
+    }
+
+    &__items {
+      margin: $spacer-s auto 0 auto;
+      max-width: 80%;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+
+        &:not(:first-child) {
+          margin-top: $spacer-xs;
+        }
+    }
+
+    &__dish {
+      //* Min-width to avoid overflow when a word is too long
+      min-width: 40%;
+      word-wrap: break-word;
+    }
+
+    &__dish-desc {
+      max-width: 70%;
+    }
+
+    &__price {
+      align-self: center;
+    }
+
+    &__order {
+      margin-top: $spacer-s;
+      align-self: center;
+    }
+}
+
+
+//* ///Responsiveness///
+
+@media only screen and (max-width : 768px) {
+  
+  .menu {
+    
+    &__price {
+      align-self: flex-start;
+    }
+  }
+  
+}

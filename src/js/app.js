@@ -28,56 +28,26 @@ class Slider {
 }
 
 
-//* Modal
-class Modal {
-  constructor() {
-    this.modal = document.querySelector('.modal');
-    this.trigger = document.querySelector('.modal-trigger');
-    this.closeButton = document.querySelector('.close-button');
-  }
-
-  test() {
-    console.log(this.modal);
-    console.log(this.trigger);
-    console.log(this.modal.classList);
-    console.log(this.closeButton);
-  }
-
-  toggleModal() {    
-    this.modal.classList.toggle("show-modal");
-  }
-
-  windowOnClick(e) {
-    if (e.target === this.modal) {
-      this.toggleModal();
-    }
-  }
-
-  modalEvents() {
-    this.trigger.addEventListener("click", this.test);
-    this.closeButton.addEventListener("click", this.toggleModal);
-    window.addEventListener("click", this.windowOnClick);
-  }
-}
-
-
+//* =========
 //* Main
+//* =========
 
-const modal = new Modal();
-modal.modalEvents();
-// modal.test();
+(() => {
 
-try {
-  loadSlider();
-} catch(error) {
-  console.log(error);
-}
+  try {
+    loadSlider();
+  } catch(error) {
+    console.log(error);
+  }
 
-try {
-  loadHamburger();
-} catch(error) {
-  console.log(error);
-}
+  try {
+    loadHamburger();
+  } catch(error) {
+    console.log(error);
+  }
+
+})();
+
 
 //* Functions
 
@@ -123,7 +93,5 @@ function loadHamburger() {
     navbarItems.classList.toggle('is-active');
   })
 }
-
-
 
 

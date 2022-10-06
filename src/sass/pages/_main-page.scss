@@ -14,7 +14,7 @@
   }
 }
 
-.menu {
+.dishes {
   margin: $spacer-m auto 0 auto;
   text-align: center;
 
@@ -157,7 +157,7 @@
 //* Mobile
 @media only screen and (max-width : 768px) {
   
-  .menu {
+  .dishes {
 
       &__items {
         flex-direction: column;

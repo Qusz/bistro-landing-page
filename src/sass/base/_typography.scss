@@ -11,13 +11,13 @@ $fs-l: 3.5em;
 $fs-m: 2em;
 $fs-s: 1.2em;
 $fs-xs: 1em;
-$fs-xxs: .7em;
+$fs-xxs: .8em;
 
 
 //* ///Pages///
 
 //* Main page
-.menu {
+.dishes {
 
   &__title {
     font-family: $ff-headers;
@@ -88,7 +88,27 @@ $fs-xxs: .7em;
     font-family: $ff-main;
     font-size: $fs-s;
   }
+}
 
+//* Menu
+
+.menu {
+
+  &__header {
+    font-family: $ff-headers;
+    font-size: $fs-l;
+  }
+
+  &__dish-name,
+  &__price {
+    font-family: $ff-main;
+    font-size: $fs-m;
+  }
+
+  &__dish-desc {
+    font-family: $ff-main--light;
+    font-size: $fs-xxs;
+  }
 }
 
 //* ///Elements///
@@ -136,4 +156,21 @@ $fs-xxs: .7em;
     font-family: $ff-main;
     font-size: $fs-s;
   }
+}
+
+
+//* ///Responsiveness///
+
+@media only screen and (max-width : 768px) {
+  
+  //* Menu
+
+  .menu {
+    
+    &__dish-name,
+    &__price {
+      font-size: $fs-s;
+    }
+  }
+  
 }
