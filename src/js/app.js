@@ -1,6 +1,6 @@
-
-
-//* Slider
+//* ==================
+//* Helper classes
+//* ==================
 class Slider {
   moveToSlide(track, currentSlide, targetSlide) {
     track.style.transform = 'translateX(-' + targetSlide.style.left +')';
@@ -28,9 +28,13 @@ class Slider {
 }
 
 
-//* =========
+
+
+//* =============
 //* Main
-//* =========
+//* =============
+
+
 
 (() => {
 
@@ -49,7 +53,13 @@ class Slider {
 })();
 
 
+
+
+//* ================
 //* Functions
+//* ================
+
+
 
 function loadSlider() {
   const track = document.querySelector('.ambience__track'),
@@ -59,6 +69,7 @@ function loadSlider() {
         slideWidth = slides[0].getBoundingClientRect().width,
         slider = new Slider();
 
+  //* Make room for each slide
   slides.forEach((slide, index) => {
     slide.style.left = slideWidth * index + 'px';
   });
@@ -93,5 +104,3 @@ function loadHamburger() {
     navbarItems.classList.toggle('is-active');
   })
 }
-
-
