@@ -1,0 +1,37 @@
+@use "../base/" as *;
+
+
+
+@mixin btn($bg-color: $clr-main-light, $text-color: $clr-black) {
+  padding: $spacer-xs $spacer-s;
+  background-color: $bg-color;
+  color: $text-color;
+
+  text-align: center;
+
+  border-radius: 5rem;
+
+  transition: .2s ease;
+
+    &:hover {
+      background-color: lighten($bg-color, 8);
+    }
+}
+
+.btn {
+  @include btn;
+}
+
+.btn-accent {
+  @include btn($clr-accent, $clr-white);
+}
+
+.btn-secondary {
+  @include btn($clr-secondary, $clr-white);
+}
+
+.btn-main-dark {
+  @include btn($clr-main-dark, $clr-black);
+}
+
+

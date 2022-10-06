@@ -172,5 +172,14 @@ $fs-xxs: .8em;
       font-size: $fs-s;
     }
   }
+
+  //* Delivery
+
+  .delivery {
+
+    &__title {
+      font-size: $fs-l;
+    }
+  }
   
 }

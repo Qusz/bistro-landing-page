@@ -28,6 +28,10 @@
       margin-block: $spacer-l;
     }
 
+    &__button {
+      align-self: flex-start;
+    }
+
 }
 
 .card--plain .card {
@@ -63,6 +67,10 @@
       &__img {
         width: 100%;
         order: 1;
+      }
+
+      &__button {
+        align-self: center;
       }
   }
 
