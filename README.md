@@ -10,5 +10,5 @@ This is a training project I built to practice SASS + BEM and building responsiv
 
 # Usage
 - Clone the repo
-- Run $npm install
+- Run ```$ npm install```
 - Run $npm run compile to compile SASS files into CSS + watch SASS changes
