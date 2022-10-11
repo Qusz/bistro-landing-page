@@ -1,14 +1,16 @@
 {
   "name": "restaurant-landing-page",
   "version": "1.0.0",
+  "private": true,
   "description": "",
-  "main": "index.js",
   "author": "",
   "license": "ISC",
   "scripts": {
-    "compile": "sass --watch --no-source-map ./src/sass/main.scss ./src/css/main.css"
+    "compile": "sass --watch --no-source-map ./src/sass/main.scss ./src/css/main.css",
+    "start": "serve ./src"
   },
-  "dependencies": {
-    "sass": "^1.55.0"
+  "devDependencies": {
+    "sass": "^1.55.0",
+    "serve": "^14.0.1"
   }
 }
