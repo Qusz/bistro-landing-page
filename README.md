@@ -12,3 +12,4 @@ This is a training project I built to practice SASS + BEM and building responsiv
 - Clone the repo
 - Run ```$ npm install```
 - Run ```$ npm run compile``` to compile SASS files into CSS + watch SASS changes
+- Run ```$ npm start``` to serve the pages
