@@ -9,10 +9,8 @@
     "compile": "sass --watch --no-source-map ./src/sass/main.scss ./src/css/main.css",
     "start": "serve ./src"
   },
-  "dependencies": {
-    "sass": "^1.55.0"
-  },
   "devDependencies": {
+    "sass": "^1.55.0",
     "serve": "^14.0.1"
   }
 }
