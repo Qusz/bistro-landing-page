@@ -6,11 +6,24 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "compile": "sass --watch --no-source-map ./src/sass/main.scss ./src/css/main.css",
-    "start": "serve ./src"
+    "start": "serve ./src/pages",
+    "sass-compile": "sass --no-source-map ./src/sass/main.scss public/css/main.css",
+    "sass-compile:watch": "sass --watch --no-source-map ./src/sass/main.scss public/css/main.css", 
+    "public:html": "copyfiles -u 1 ./src/pages/**/* public",
+    "public:js": "copyfiles -u 1 ./src/js/**/* public",
+    "public:assets": "copyfiles -u 1 ./src/assets/**/* public",
+    "public": "npm-run-all --parallel public:*",
+    "postbuild": "postcss ./public/css/main.css -u autoprefixer cssnano -r --no-map",
+    "build": "npm-run-all sass-compile public postbuild"
+
   },
   "devDependencies": {
     "sass": "^1.55.0",
-    "serve": "^14.0.1"
+    "serve": "^14.0.1",
+    "autoprefixer": "^10.4.13",
+    "copyfiles": "^2.4.1",
+    "cssnano": "^5.1.14",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.0.0"
   }
 }
