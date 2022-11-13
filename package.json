@@ -9,6 +9,7 @@
     "start": "serve ./src/pages",
     "sass-compile": "sass --no-source-map ./src/sass/main.scss public/css/main.css",
     "sass-compile:watch": "sass --watch --no-source-map ./src/sass/main.scss public/css/main.css", 
+    "public:index": "copyfiles -u 1 ./src/index.html public",
     "public:html": "copyfiles -u 1 ./src/pages/**/* public",
     "public:js": "copyfiles -u 1 ./src/js/**/* public",
     "public:assets": "copyfiles -u 1 ./src/assets/**/* public",
