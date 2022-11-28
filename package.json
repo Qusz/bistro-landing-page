@@ -6,25 +6,36 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start": "serve ./src/pages",
-    "sass-compile": "sass --no-source-map ./src/sass/main.scss public/css/main.css",
-    "sass-compile:watch": "sass --watch --no-source-map ./src/sass/main.scss public/css/main.css", 
-    "public:index": "copyfiles -u 1 ./src/index.html public",
-    "public:html": "copyfiles -u 1 ./src/pages/**/* public",
-    "public:js": "copyfiles -u 1 ./src/js/**/* public",
-    "public:assets": "copyfiles -u 1 ./src/assets/**/* public",
+    "build": "npm-run-all build:* postbuild",
+    "start": "npm-run-all public sass-compile dev",
+    "start-watch": "npm-run-all public -p watch:*",
+    "sass-compile": "sass --no-source-map ./src/sass/main.scss:public/main.css",
+    "dev": "wds --node-resolve --open \"/public/\"",
+    "postbuild": "postcss \"dist/main.css\" -u autoprefixer cssnano -r --no-map",
+    "public:html": "copyfiles -u 1 \"./src/**/*.html\" public",
+    "public:js": "copyfiles -u 1 \"./src/js/**/*\" public",
+    "public:assets": "copyfiles -u 1 \"./src/assets/**/*\" public",
     "public": "npm-run-all --parallel public:*",
-    "postbuild": "postcss ./public/css/main.css -u autoprefixer cssnano -r --no-map",
-    "build": "npm-run-all sass-compile public postbuild"
+    "watch:html": "onchange \"src/**/*.html\" -- npm run public:html",
+    "watch:js": "onchange \"src/**/*.js\" -- npm run public:js",
+    "watch:assets": "onchange \"src/assets/**/*\" -- npm run public:assets",
+    "watch:sass-compile": "sass --watch --no-source-map ./src/sass/main.scss:public/main.css",
+    "watch:serve": "wds --node-resolve --watch --open \"/public/\"",
+    "build:sass": "sass --no-source-map ./src/sass/main.scss:dist/main.css",
+    "build:html": "copyfiles -u 1 \"./src/**/*.html\" dist",
+    "build:js": "copyfiles -u 1 \"./src/js/**/*\" dist",
+    "build:assets": "copyfiles -u 1 \"./src/assets/**/*\" dist"
 
   },
   "devDependencies": {
-    "sass": "^1.55.0",
-    "serve": "^14.0.1",
-    "autoprefixer": "^10.4.13",
+    "@web/dev-server": "^0.1.34",
+    "autoprefixer": "^10.4.12",
     "copyfiles": "^2.4.1",
     "cssnano": "^5.1.14",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^10.0.0"
+    "onchange": "^7.1.0",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.56.1"
   }
 }
